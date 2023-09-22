@@ -1,0 +1,22 @@
+using System;
+using System.Globalization;
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        int number, hourWorked;
+double salary, hourValue;
+
+number = int.Parse(Console.ReadLine());
+hourWorked = int.Parse(Console.ReadLine());
+hourValue = double.Parse(Console.ReadLine());
+
+salary = hourValue * hourWorked;
+
+Console.WriteLine("NUMBER = " + number);
+Console.WriteLine("SALARY = U$ " + salary.ToString("F2", CultureInfo.InvariantCulture));
+
+    }
+
+}
